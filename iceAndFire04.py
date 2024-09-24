@@ -20,8 +20,8 @@ def main():
         pprint.pprint(got_dj)
         gothouseresp_url = ''.join(got_dj['allegiances'])
         gothouseresp = requests.get(gothouseresp_url).json()
-        print(gothouseresp)
-        pprint.pprint(got_dj['books'])
+        print(gothouseresp['name'])
+        pprint.pprint(requests.get(got_dj['books']))
 
 
 if __name__ == "__main__":
