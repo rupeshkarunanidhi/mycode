@@ -16,7 +16,8 @@ def index():
   ## if the key "username" has a value in session
   if "username" in session:
     username = session["username"]
-    return "Logged in as " + username + "<br>" + \
+    age = session["age"]
+    return "Logged in as " + username + " age " + str(age) + "<br>" + \
       "<b><a href = '/logout'>click here to log out</a></b>"
 
   ## if the key "username" does not have a value in session
