@@ -14,7 +14,7 @@ APINASA = "https://api.nasa.gov/planetary/apod?api_key="
 
 # Your NASA API key goes here
 # in production this should be set as an environmental variable
-APIKEY = "9MNo3vFm3usG8pSttxcvyeV5h1eVRdzIZasfGE82"
+APIKEY = "APIKEY"
 
 def astro(request):    
     res = requests.get(API)
